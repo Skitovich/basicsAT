@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 
-class CashbackHackerTest {
+public class CashbackHackerTest {
 
     @Test
     public void ShouldShowBuyUnderThousand () {
@@ -20,7 +20,7 @@ class CashbackHackerTest {
     public void shouldShowZero() {
         CashbackHacker cashbackHacker = new CashbackHacker();
         int actual = cashbackHacker.remain(1000);
-        int expected = 1000;
+        int expected = 0;
         assertEquals(actual, expected);
     }
 
