@@ -20,7 +20,7 @@ class CashbackHackerTest {
     public void shouldShowZero() {
         CashbackHacker cashbackHacker = new CashbackHacker();
         int actual = cashbackHacker.remain(1000);
-        int expected = 0;
+        int expected = 1000;
         assertEquals(actual, expected);
     }
 
