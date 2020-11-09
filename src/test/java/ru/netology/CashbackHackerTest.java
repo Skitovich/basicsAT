@@ -1,21 +1,22 @@
 package ru.netology;
 
-import org.junit.Ignore;
+
 
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class CashbackHackerTest {
 
     @Test
-    public void ShouldShowBuyUnderThousand () {
+    public void ShouldShowBuyUnderThousand() {
         CashbackHacker cashbackHacker = new CashbackHacker();
         int actual = cashbackHacker.remain(900);
         int expected = 100;
         assertEquals(expected, actual);
     }
 
-    @Ignore
+
     @Test
     public void shouldShowZero() {
         CashbackHacker cashbackHacker = new CashbackHacker();
